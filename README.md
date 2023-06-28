@@ -71,7 +71,7 @@ By default, the following servers/APIs are enabled:
 To run the following commands in your browser, open Cloud Shell through the Google Cloud Console.
 
 - `gcloud init` will initialise, authorise and configure the gcloud CLI
-- `gcloud auth login` withh authorise access to the gcloud CLI for your current account
+- `gcloud auth login` will authorise access to the gcloud CLI for your current account
 - `gcloud config set project <PROJECT_ID>` will set the default project to work on
 
 To run these commands locally, [install the gcloud CLI](https://cloud.google.com/sdk/docs/install).
@@ -100,12 +100,16 @@ These quotas are measured **per region**. This means that your project could hav
 | base_model:textembedding-gecko requests per minute | 600 |
 | Resource management requests* per minute | 600 |
 | Job or long-running operation requests per minute | 60 |
-| Online prediction requests per minute (public endpoints only) | 30,000 |
+| Online prediction requests per minute<sup>+</sup> | 30,000 |
 | Online prediction request throughput per minute | 1.5 GB |
 | Online explanation requests per minute | 600 |
 | Vertex AI Vizier requests per minute | 6,000 |
 | Vertex AI Feature Store online serving requests per minute | 300,000 |
 | Vertex ML Metadata requests per minute | 12,000 |
+
+\* Resource management requests include any request that is not a job, long-running operation, online prediction request, or Vertex AI Vizier request.
+
+<sup>+</sup> This quota applies for public endpoints only. Private endpoints have unlimited requests per minute.
 
 
 ## Resources
