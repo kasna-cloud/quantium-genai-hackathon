@@ -1,6 +1,6 @@
 # Quantium GenAI Hackathon
 
-This repo contains resources for participants of the Quantium GenAI Hackacthon
+This repo contains resources for participants of the Quantium GenAI Hackathon
 
 ## Summary 
 
